@@ -14,4 +14,5 @@ sed -i 's@^  #username: "elastic"@  username: "elastic"@g' /etc/metricbeat/metri
 sed -i 's@^  #password: "changeme"@  password: '"${ELASTIC_PASSWORD}"'@g' /etc/metricbeat/metricbeat.yml
 sed -i 's@^  #host: "localhost:5601"@  host: '"${KIBANA_URL}"'@g' /etc/metricbeat/metricbeat.yml
 
+metricbeat test output
 metricbeat setup --dashboards
