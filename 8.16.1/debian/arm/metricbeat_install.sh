@@ -1,7 +1,7 @@
 #!/bin/bash
 
 curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-8.16.1-arm64.deb
-dpkg -i metricbeat-8.16.1-amd64.deb
+dpkg -i metricbeat-8.16.1-arm64.deb
 
 metricbeat modules enable mysql
 metricbeat modules enable nginx
